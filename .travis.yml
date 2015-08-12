@@ -4,6 +4,6 @@ install:
 - mkdir -p ~/Library/RubyMotion/build
 - sudo motion update --cache-version=3.13
 - bundle install
-- bundle exec rake pod:install > /dev/null
+- bundle exec rake pod:install > pod_log.txt
 script:
 - bundle exec rake spec
